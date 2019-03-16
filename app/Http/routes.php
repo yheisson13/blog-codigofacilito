@@ -25,12 +25,21 @@ Route::get('articles', [
 	'as'	=> 'articles',
 	'uses'	=> 'Usercontroller@view'
 ]);
-*/
 
 Route::group(['prefix' => 'articles'], function(){
 
 	Route::get('view/{article?}', function($article = "Vacio"){
 		echo $article;
 	});
+
+});
+*/
+
+Route::group(['prefix' => 'articles'], function(){
+
+	Route::get('view/{id}', [
+		'uses' 	=> 'TestController@view',
+		'as'	=> 'ariclesView'
+	]);
 
 });
