@@ -17,7 +17,8 @@ class UsersController extends Controller
      */
     public function index()
     {
-        //
+        $users = User::orderBy('id', 'ASC')->paginate(5);
+        return view('admin.users.index')->with('users', $users);
     }
 
     /**
@@ -40,7 +41,8 @@ class UsersController extends Controller
     {
         $user = new User($request->all());
         $user->password = bcrypt($request->password);
-        $user->save();
+        dd($user);
+        //$user->save();
         dd('usuario creado');
     }
 
