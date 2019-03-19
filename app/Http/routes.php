@@ -14,32 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-/*
-Route::get('articles/{nombre?}', function($nombre = "No coloco nombre") {
-	echo "El nombre que has colocado es: " . $nombre;
-});
-
-
-Route::get('articles', [
-	'as'	=> 'articles',
-	'uses'	=> 'Usercontroller@view'
-]);
-
-Route::group(['prefix' => 'articles'], function(){
-
-	Route::get('view/{article?}', function($article = "Vacio"){
-		echo $article;
-	});
-
-});
-*/
-
-Route::group(['prefix' => 'articles'], function(){
-
-	Route::get('view/{id}', [
-		'uses' 	=> 'TestController@view',
-		'as'	=> 'ariclesView'
-	]);
-
-});
