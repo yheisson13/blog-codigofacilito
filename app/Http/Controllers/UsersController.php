@@ -18,7 +18,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        $users = User::orderBy('id', 'ASC')->paginate(5);
+        $users = User::orderBy('id', 'DES')->paginate(5);
         return view('admin.users.index')->with('users', $users);
     }
 
@@ -91,6 +91,10 @@ class UsersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::find($id);
+        $user->delete();
+
+        Flash::warning('El usuario ' . $user->name . ' ha sido borrado de forma exitosa!');
+        return redirect()->route('admin.users.index');
     }
 }
