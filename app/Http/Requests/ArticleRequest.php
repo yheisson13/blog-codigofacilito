@@ -25,7 +25,7 @@ class ArticleRequest extends Request
     {
         return [
             'title'         => 'min:8|max:250|required|unique:articles',
-            'category-id'   => 'required',
+            'category_id'   => 'required',
             'content'       => 'min:60|required',
             'image'         => 'required'
         ];
