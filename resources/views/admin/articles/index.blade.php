@@ -33,8 +33,8 @@
 					<td>{{ $article->category->name }}</td>
 					<td>{{ $article->user->name }}</td>
 					<td>
-						<a href="{{ route('admin.categories.edit', $article->id) }}" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span></a>
-						<a href="{{ route('admin.categories.destroy', $article->id) }}" onclick="return confirm('Seguro que deseas eliminarlo?')" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+						<a href="{{ route('admin.articles.edit', $article->id) }}" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span></a>
+						<a href="{{ route('admin.articles.destroy', $article->id) }}" onclick="return confirm('Seguro que deseas eliminarlo?')" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
 					</td>
 				</tr>
 			@endforeach
