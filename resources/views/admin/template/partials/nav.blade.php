@@ -21,7 +21,7 @@
           <li><a href="{{ route('admin.users.index') }}">Usuarios</a></li>
           <li><a href="{{ route('admin.categories.index') }}">Categorias</a></li>
           <li><a href="{{ route('admin.articles.index') }}">Articulos</a></li>
-          <li><a href="#">Imagenes</a></li>
+          <li><a href="{{ route('admin.images.index') }}">Imagenes</a></li>
           <li><a href="{{ route('admin.tags.index') }}">Tags</a></li>
         </ul>
         
