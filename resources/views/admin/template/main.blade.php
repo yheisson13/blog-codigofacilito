@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>@yield('title','Default') | Panel Admin </title>
+	<link rel="stylesheet" href="{{ asset('css/admin.css') }}">
 	<link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.css') }}">
 	<link rel="stylesheet" href="{{ asset('plugins/chosen/chosen.css') }}">
 </head>
