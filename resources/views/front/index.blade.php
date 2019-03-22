@@ -34,19 +34,7 @@
 			</div>
 		</div>
 		<div class="col-md-4 aside">
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<h3 class="panel-title">Categorias</h3>
-				</div>
-				<div class="panel-body">
-					<ul class="list-group">
-						<li class="list-group-item">
-							<span class="badge">14</span>
-							Noticias
-						</li>
-					</ul>
-				</div>
-			</div>
+			@include('front.partials.aside')
 		</div>
 	</div>
 

@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header>
-		@include('front.template.partials.header')
+		@include('front.partials.header')
 	</header>
 	<div class="container">
 		@yield('content')
