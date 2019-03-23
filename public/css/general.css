@@ -1,3 +1,16 @@
 .logo{
 	width: 60px;
 }
+
+.title-blog, .title-blog:hover{
+	color: #000;
+	text-decoration: none;
+}
+
+.panel-default{
+	height: 480px;
+}
+
+.panel-body img{
+	height: 300px; 
+}

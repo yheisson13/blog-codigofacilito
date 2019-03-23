@@ -11,12 +11,14 @@
 					<div class="col-md-6">
 						<div class="panel panel-default">
 							<div class="panel-body">
-								<a href="#" class="thumbnail">
+								<a href="{{ route('front.view.article', $article->slug) }}" class="thumbnail">
 									@foreach($article->images as $image)
 										<img class="img-responsive img-article" src="{{ asset('images/articles/' . $image->name) }}" alt="...">
 									@endforeach
 								</a>
-								<h3 class="text-center">{{ $article->title }}</h3>
+								<a href="{{ route('front.view.article', $article->slug) }}">
+									<h3 class="text-center">{{ $article->title }}</h3>
+								</a>
 								<hr>
 								<i class="glyphicon glyphicon-folder-open"></i>
 								<a href="{{ route('front.search.category', $article->category->name) }}">{{ $article->category->name }}</a>
